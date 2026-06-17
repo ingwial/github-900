@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SPA Productos</title>
+    <link rel="stylesheet" href="/spa/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Productos</h1>
+
+      <section id="form-section">
+        <h2 id="form-title">Agregar producto</h2>
+        <form id="product-form">
+          <input type="hidden" id="product-id" />
+          <div>
+            <label>Nombre</label>
+            <input id="name" required />
+          </div>
+          <div>
+            <label>Precio</label>
+            <input id="price" type="number" step="0.01" />
+          </div>
+          <div>
+            <button type="submit">Guardar</button>
+            <button type="button" id="cancel-btn">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Lista</h2>
+        <div id="products-list"></div>
+      </section>
+
+      <p><a href="/">Volver al inicio</a></p>
+    </main>
+
+    <script src="/spa/app.js"></script>
+  </body>
+</html>
